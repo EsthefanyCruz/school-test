@@ -10,26 +10,46 @@
     <course id="4" name="Programacion" keycode="P1"/>
 
     <room id="1" name="S-1201"/>
+    <room id="2" name="S-1202"/>
+    <room id="3" name="S-1203"/>
+    <room id="4" name="S-1204"/>
 
     <teacher ID="1" uuid="uuid-1" name="Oscar" first_surname="de la O" second_surname="Cervantes"/>
+    <teacher ID="2" uuid="uuid-2" name="Oscar2" first_surname="de la O" second_surname="Cervantes"/>
+    <teacher ID="3" uuid="uuid-3" name="Oscar3" first_surname="de la O3" second_surname="Cervantes3"/>
+    <teacher ID="4" uuid="uuid-4" name="Oscar4" first_surname="de la O4" second_surname="Cervantes4"/>
 
     <teacher_role id="1" name="SECRETARIO" teacher_id="1"/>
     <teacher_role id="2" name="PROFESOR" teacher_id="1"/>
     <teacher_role id="3" name="DIRECTOR" teacher_id="1"/>
+
+    <teacher_role id="4" name="SECRETARIO" teacher_id="2"/>
+    <teacher_role id="5" name="PROFESOR" teacher_id="2"/>
+    <teacher_role id="6" name="DIRECTOR" teacher_id="2"/>
+
+    <teacher_role id="7" name="SECRETARIO" teacher_id="3"/>
+    <teacher_role id="8" name="PROFESOR" teacher_id="3"/>
+    <teacher_role id="9" name="DIRECTOR" teacher_id="3"/>
+
+    <teacher_role id="10" name="SECRETARIO" teacher_id="4"/>
+    <teacher_role id="11" name="PROFESOR" teacher_id="4"/>
+    <teacher_role id="12" name="DIRECTOR" teacher_id="4"/>
+
 
     <student id="1" uuid="U-1" name="José" first_surname="López" second_surname="Santos" birthday="1990-01-01" />
     <student id="2" uuid="U-2" name="Ramon" first_surname="López" second_surname="Santos" birthday="1992-04-03" />
     <student id="3" uuid="U-3" name="Raul" first_surname="Acevedo" second_surname="Martinez" birthday="1993-08-07" />
     <student id="4" uuid="U-4" name="Juan" first_surname="Torres" second_surname="Santiago" birthday="1994-05-05" />
 
-    <grade id="1" grade="100" data_register="2021-03-29" course_teacher_id="1" student_id="1"/>
-    <grade id="2" grade="90" data_register="2021-01-25" course_teacher_id="3" student_id="2"/>
-    <grade id="3" grade="100" data_register="2021-03-10" course_teacher_id="3" student_id="3"/>
-    <grade id="4" grade="null" data_register="2021-04-10" course_teacher_id="4" student_id="4"/>
-
     <course_teacher id="1" course_id="1" teacher_id="1" room_id="1" start_time="10:00:00" end_time="11:30:00" day="MONDAY"/>
     <course_teacher id="2" course_id="2" teacher_id="2" room_id="2" start_time="11:00:00" end_time="12:30:00" day="TUESDAY"/>
     <course_teacher id="3" course_id="3" teacher_id="3" room_id="3" start_time="12:00:00" end_time="12:30:00" day="WEDNESDAY"/>
+    <course_teacher id="4" course_id="4" teacher_id="4" room_id="4" start_time="12:00:00" end_time="12:30:00" day="WEDNESDAY"/>
+
+    <grade id="1" grade="100" data_register="2021-03-29" course_teacher_id="1" student_id="1"/>
+    <grade id="2" grade="90" data_register="2021-01-25" course_teacher_id="2" student_id="2"/>
+    <grade id="3" grade="100" data_register="2021-03-10" course_teacher_id="3" student_id="3"/>
+    <grade id="4" grade="89" data_register="2021-04-10" course_teacher_id="4" student_id="4"/>
 
 
 </dataset>

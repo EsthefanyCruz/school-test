@@ -62,5 +62,7 @@ public class TestDAO extends AbstractTransactionalTestNGSpringContextTests {
         assertThat(course)
                 .containsExactlyInAnyOrderElementsOf(Collections.singleton(uuid));
     }
+
+
 }
 
