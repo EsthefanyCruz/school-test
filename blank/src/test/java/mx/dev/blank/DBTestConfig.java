@@ -31,7 +31,7 @@ public class DBTestConfig {
 
   @Bean
   public LocalContainerEntityManagerFactoryBean entityManagerFactory(
-      final JpaVendorAdapter adapter, final DataSource dataSource) {
+          final JpaVendorAdapter adapter, final DataSource dataSource) {
     final Properties props = new Properties();
     props.setProperty("hibernate.id.new_generator_mappings", "false");
     props.setProperty("hibernate.hbm2ddl.auto", "create-drop");
@@ -68,20 +68,20 @@ public class DBTestConfig {
     @Bean
     public DataSource dataSource() {
       return new TransactionAwareDataSourceProxy(
-          new EmbeddedDatabaseBuilder()
-              .setType(EmbeddedDatabaseType.HSQL)
-              .addScript("classpath:hsqldb-mysql-compatibility.sql")
-              .build());
+              new EmbeddedDatabaseBuilder()
+                      .setType(EmbeddedDatabaseType.HSQL)
+                      .addScript("classpath:hsqldb-mysql-compatibility.sql")
+                      .build());
     }
 
     @Bean
     public DatabaseDataSourceConnectionFactoryBean dbUnitDatabaseConnection(
-        final DataSource dataSource) {
+            final DataSource dataSource) {
       final DatabaseConfigBean bean = new DatabaseConfigBean();
       bean.setDatatypeFactory(new HsqldbDataTypeFactory());
 
       final DatabaseDataSourceConnectionFactoryBean dbConnectionFactory =
-          new DatabaseDataSourceConnectionFactoryBean(dataSource);
+              new DatabaseDataSourceConnectionFactoryBean(dataSource);
       dbConnectionFactory.setDatabaseConfig(bean);
       return dbConnectionFactory;
     }
